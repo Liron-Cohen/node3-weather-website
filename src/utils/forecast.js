@@ -11,7 +11,7 @@ const forecast = (latitude, longtitude, callback) => {
             callback('Not a valid location!', undefined)
         } else {
             callback(undefined, 'It is ' + body.current.temperature + ' degrees, and feels like '
-                + body.current.feelslike + ' degrees.')
+                + body.current.feelslike + ' degrees. The humidity is ' + body.current.humidity + "%.")
         }
     })
 }
